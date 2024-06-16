@@ -1,0 +1,102 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Maximum width */
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+    color: #72777c;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Form Elements */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.modal-content input,
+.modal-content select {
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccd0d4;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.modal-content button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0073aa;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.modal-content button:hover {
+    background-color: #005177;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #23282d;
+}
+

@@ -1,0 +1,440 @@
+.calendarContainer #prevMonth,
+.calendarContainer #nextMonth {
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #00b4d8 !important;
+    padding: 5px 10px !important;
+    /* Add padding for better appearance */
+}
+
+.calendarContainer #month {
+    color: grey !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    align-items: center !important;
+    margin: 1rem !important;
+}
+
+.calendarContainer #prevMonth:hover,
+#nextMonth:hover {
+    background-color: lightgray !important;
+    /* Change to the desired hover effect */
+    cursor: pointer !important;
+}
+
+.calendarContainer #calendar {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.calendarContainer #calendar table {
+    border-width: 1px !important;
+    border-collapse: separate !important;
+}
+
+.calendarContainer #dayMonth {
+    margin: auto 5px !important;
+}
+
+.calendarContainer {
+    background: hsl(0, 0%, 100%) !important;
+    width: 100% !important;
+    justify-content: start !important;
+    align-items: center !important;
+}
+
+.calendarContainer .calendarBox {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.calendarContainer .header {
+    font-size: 18px !important;
+    display: flex !important;
+    justify-content: center !important;
+
+    align-items: center !important;
+    font-weight: bold !important;
+    height: 50px !important;
+}
+
+.calendarContainer td {
+    height: 40px !important;
+    width: 70px !important;
+    border-radius: 2px !important;
+    border: 1px solid transparent !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+.calendarContainer td:hover {
+    border: 1px solid aqua !important;
+    transition: 1s all !important;
+    cursor: pointer !important;
+    opacity: 0.6 !important;
+}
+
+.calendarContainer table {
+    border-spacing: 10px !important;
+}
+
+.calendarContainer .calendar-days {
+    display: grid !important;
+}
+
+.calendarContainer .calendar-day {
+    padding: 5px !important;
+    border: 1px solid #ccc !important;
+}
+
+.calendarContainer .beforeDate {
+    background-color: white !important;
+    border: 1px solid #003d7a !important;
+    color: #003d7a !important;
+}
+
+.calendarContainer .not-available {
+    background-color: grey !important;
+    color: #fff !important;
+}
+
+.calendarContainer .selected {
+    background-color: #003d7a !important;
+    color: #fff !important;
+}
+
+.calendarContainer .disabled {
+    background-color: #CCC !important;
+    color: #fff !important;
+}
+
+.calendarContainer .not-selected {
+    background-color: #00b4d8 !important;
+    color: #fff !important;
+}
+
+.calendarContainer .box {
+    display: flex !important;
+    height: 100% !important;
+    width: 100% !important;
+    flex-direction: column !important;
+}
+
+.calendarContainer #appointment {
+    margin-bottom: 20px !important;
+}
+
+.calendarContainer #appointment,
+.calendarContainer #addressLocation {
+    text-align: center !important;
+    text-transform: capitalize !important;
+    font-weight: 500 !important;
+    color: gray !important;
+    font-size: 24px !important;
+}
+
+.calendarContainer #timeSelected {
+    text-align: center !important;
+    text-transform: capitalize !important;
+    font-weight: 500 !important;
+    color: #003d7a !important;
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+}
+
+.calendarContainer #timeSlot {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-height: 500px !important;
+}
+
+.calendarContainer input {
+    border: none !important;
+    outline: none !important;
+    color: grey !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    width: 70px !important;
+}
+
+.calendarContainer #setAppointment {
+    width: 80% !important;
+    padding: 15px !important;
+    font-size: 1.2rem !important;
+    background-color: rgb(255, 123, 15) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.calendarContainer .timeslot {
+    width: 200px !important;
+    padding: 10px !important;
+    font-size: 1rem !important;
+    margin: 1rem !important;
+	background-color: white !important;
+}
+
+.calendarContainer .day-name {
+    border: none !important;
+}
+
+
+.calendarContainer select {
+    border: none !important;
+    border-radius: 0 !important;
+    /* Add custom border-bottom to mimic underline effect */
+
+    /* Adjust font size */
+    font-size: 0.925rem !important;
+    /* Adjust font weight */
+    font-weight: 400 !important;
+    /* Adjust padding */
+    padding: 5px 8px !important;
+    /* Adjust appearance */
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    width: 120px !important;
+    appearance: none !important;
+    /* Add custom arrow icon */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.879 6.293a1 1 0 011.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 10.586l4.879-4.879z"/></svg>') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 10px center !important;
+    background-size: 16px !important;
+}
+
+/* Style for select dropdown */
+.calendarContainer select:focus {
+    outline: none !important;
+    border-color: #007bff !important;
+    /* Change border color on focus if desired */
+}
+
+/* Style for select options dropdown */
+.calendarContainer select option {
+    /* Add custom padding */
+    padding: 8px !important;
+}
+
+.calendarContainer .timeslot {
+    width: 200px !important;
+    padding: 10px !important;
+    font-size: 1rem !important;
+    margin: .5rem !important;
+    color: #003d7a !important;
+    background-color: white !important;
+    border: 1px solid #003d7a !important;
+}
+
+.calendarContainer .selected {
+    background-color: #003d7a !important;
+    color: white !important;
+}
+
+.calendarContainer .disabled {
+    background-color: #CCC !important;
+}
+
+.calendarContainer .scheduled {
+    background-color: rgb(255, 123, 15) !important;
+    color: white !important;
+}
+
+#setAppointment {
+    width: 100% !important;
+    padding: 15px !important;
+    font-size: 1.2rem !important;
+    background-color: rgb(255, 123, 15) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.back {
+    margin: 0 20px 0 -50px !important;
+    font-size: 40px !important;
+}
+
+select {
+    border: 1px solid #003d7a;
+    border-radius: 5px;
+    font-size: 0.925rem;
+    font-weight: 400;
+    padding: 7px 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 170px;
+    min-width: 120px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.879 6.293a1 1 0 011.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 10.586l4.879-4.879z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+select option {
+    padding: 8px;
+}
+
+.calendarContainer #timeSelected {
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    line-height: 50px !important;
+    margin-bottom: 10px !important;
+}
+
+#addressLocation {
+    margin-bottom: 0;
+}
+.calendarContainer {
+    margin: 0 auto !important;
+    background-color: transparent !important;
+}
+
+.calendarContainer .box {
+    margin-top: 0 !important;
+}
+
+#setAppointment {
+    cursor: pointer !important;
+}
+
+.spinner {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+    flex-direction: column;
+}
+
+/* Style the FontAwesome spinner icon */
+.fa-spinner {
+    color: #333; /* Set the color of the spinner */
+}
+
+.calendarContainer #appointment {
+    margin-bottom: 0px !important;
+}
+
+.pagination-button {
+    background-color: white !important;
+    padding: 5px !important;
+    color: black !important;
+    border: 1px solid #CCC !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    margin: 5px 20px !important;
+}
+
+.schedule-order-btn {
+    background-color: white !important;
+    padding: 5px !important;
+    color: black !important;
+    border: 1px solid #CCC !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    width: 130px !important;
+}
+
+.action-button {
+    background-color: white !important;
+    padding: 5px !important;
+    color: black !important;
+    border: 1px solid #CCC !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    width: 130px !important;
+    margin: 5px 20px !important;
+}
+
+table {
+    margin: 0 !important;
+}
+
+th, td {
+    padding: 0 .8em !important;
+}
+
+#setAppointment {
+    padding: 0 !important;
+    margin-top: 10px !important;
+}
+
+.calendarContainer .header {
+    height: auto !important;
+}
+
+.calendarContainer .row>* {
+    padding: 0 !important;
+}
+
+.calendarContainer select {
+    border: 1px solid #CCC !important;
+    cursor: pointer !important;
+}
+
+.calendarContainer #calendar table {
+    border-width: 0 !important;
+}
+
+.information {
+    margin-bottom: 10px !important;
+}
+
+.selected-row {
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+#orders_table_short {
+    display: none;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule-widget table {
+    border-width: 1px !important;
+}
+
+.schedule-widget thead {
+    border-bottom: 1px solid #CCC !important;
+}
+
+@media only screen and (max-width: 900px) {
+    th, td {
+        padding: 0 .2em !important;
+    }
+
+    .calendarContainer #month {
+        margin: 0 !important;
+    }
+
+    #orders_table {
+        display: none;
+    }
+
+    #orders_table_short {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .back {
+        margin: 0 !important;
+    }
+}
